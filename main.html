@@ -3,11 +3,48 @@
 <html>
 
 <head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+
+	<h1>Signup Form</h1>
+    <form method="post"> <!-- Use "post" method for submitting form data -->
+        <label for="name">Name*</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email*</label>
+        <input type="email" id="email" required>
+
+        <label>Gender*</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+
+        <label for="cars">Car Brands</label>
+        <select id="cars" required>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Mercedez">Mercedez</option>
+        </select>
+
+        <label for="age">Age*</label>
+        <input type="number" id="age" required>
+
+        <label for="dob">DOB*</label>
+        <input type="date" id="dob" required>
+
+        <label for="password">Password*</label>
+        <input type="password" id="password" required>
+
+        <button type="submit">Submit</button>
+    </form>
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
